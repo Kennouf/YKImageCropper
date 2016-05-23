@@ -19,6 +19,7 @@
 {
     self = [super init];
     if (self) {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
         self.title = NSLocalizedString(@"Crop Photo", @"");
         self.imageCropperView = [[YKImageCropperView alloc] initWithImage:image];
         [self.view addSubview:self.imageCropperView];

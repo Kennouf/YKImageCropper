@@ -18,7 +18,6 @@
 		5AEAF50F179DAE00009CD937 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEAF504179DAE00009CD937 /* AppDelegate.m */; };
 		5AEAF514179DAE00009CD937 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEAF50A179DAE00009CD937 /* main.m */; };
 		5AEAF515179DAE00009CD937 /* Sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5AEAF50B179DAE00009CD937 /* Sample.jpg */; };
-		5AEAF517179DAE00009CD937 /* YKImageCropper-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AEAF50D179DAE00009CD937 /* YKImageCropper-Info.plist */; };
 		5AEAF51F179DAE4B009CD937 /* YKImageCropperOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEAF51A179DAE4B009CD937 /* YKImageCropperOverlayView.m */; };
 		5AEAF520179DAE4B009CD937 /* YKImageCropperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEAF51C179DAE4B009CD937 /* YKImageCropperView.m */; };
 		5AEAF521179DAE4B009CD937 /* YKImageCropperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEAF51E179DAE4B009CD937 /* YKImageCropperViewController.m */; };
@@ -202,7 +201,7 @@
 			name = YKImageCropperTests;
 			productName = YKImageCropperTests;
 			productReference = 5AEAF4EA179DAD20009CD937 /* YKImageCropperTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -210,7 +209,8 @@
 		5AEAF4C2179DAD20009CD937 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastTestingUpgradeCheck = 0730;
+				LastUpgradeCheck = 0730;
 			};
 			buildConfigurationList = 5AEAF4C5179DAD20009CD937 /* Build configuration list for PBXProject "YKImageCropper" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -236,7 +236,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AEAF515179DAE00009CD937 /* Sample.jpg in Resources */,
-				5AEAF517179DAE00009CD937 /* YKImageCropper-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +324,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -373,6 +373,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example/YKImageCropper-Prefix.pch";
 				INFOPLIST_FILE = "Example/YKImageCropper-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yuyak.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -384,6 +385,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example/YKImageCropper-Prefix.pch";
 				INFOPLIST_FILE = "Example/YKImageCropper-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yuyak.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -400,6 +402,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example/YKImageCropper-Prefix.pch";
 				INFOPLIST_FILE = "YKImageCropperTests/YKImageCropperTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yuyak.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -417,6 +420,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example/YKImageCropper-Prefix.pch";
 				INFOPLIST_FILE = "YKImageCropperTests/YKImageCropperTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yuyak.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
